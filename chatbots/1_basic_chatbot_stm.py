@@ -57,4 +57,4 @@ while True:
     config = {'configurable': {'thread_id': 'thread-1'}}
     answer = chatbot.invoke({'messages': [HumanMessage(content=user_input)]}, config=config)
 
-    print(answer)
+    print(answer['messages'][-1].content)
